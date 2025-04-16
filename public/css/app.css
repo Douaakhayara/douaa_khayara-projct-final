@@ -12064,25 +12064,21 @@ nav .link :hover {
   padding: 20px;
   padding-left: 90px;
   flex-wrap: wrap;
-}
-
-.parent1 span::before {
-  content: ".....................................................................................";
-  color: grey;
-}
-
-.containre {
   gap: 40px;
 }
-.containre p {
+.containre .parent1 img {
+  border: 6px solid rgba(153, 154, 150, 0.3803921569);
+  border-radius: 50%;
+}
+.containre .parent1 p {
   color: grey !important;
 }
-.containre h6, .containre .h6 {
+.containre .parent1 h6, .containre .parent1 .h6 {
   color: #000;
 }
-.containre img {
-  border: 6px solid rgba(153, 154, 150, 0.3803921569);
-  padding: unset;
+.containre .parent1 span::before {
+  content: ".....................................................................................";
+  color: grey;
 }
 
 .containre2 {
@@ -12153,7 +12149,7 @@ nav .link :hover {
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  height: 100vh;
+  height: 102vh;
   padding-top: 80px;
   width: 100%;
 }
@@ -12236,31 +12232,39 @@ nav .link :hover {
   box-shadow: 0px 0px 24px 0px grey;
   background-color: #dadad8;
   width: 90vw;
+  height: 90vh;
 }
 .contact-ev button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: orange;
   border: none;
   padding: 10px;
   padding-bottom: 10px;
+  position: absolute;
+  left: 250px;
 }
-.contact-ev .contact-et {
+
+.contact-et {
   display: flex;
   flex-direction: column;
   gap: 1vw;
   position: relative;
+  width: 40%;
 }
-.contact-ev .contact-et .input-texts {
+.contact-et .input-texts {
   display: flex;
   flex-direction: row;
   gap: 1vw;
 }
-.contact-ev .contact-et .input-texts .text {
-  width: 15vw;
+.contact-et .input-texts .text {
+  width: 20vw;
   height: 44px;
 }
 
 .textarea {
-  width: 48vw;
+  width: 62vw;
   height: 50vh;
 }
 
@@ -12274,7 +12278,7 @@ nav .link :hover {
 
 .img-lbel {
   position: absolute;
-  right: 48vw;
+  right: 36vw;
 }
 
 .gallery-title {
@@ -12336,5 +12340,117 @@ nav .link :hover {
   padding-top: 40px;
 }
 
+.contact-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  margin-top: 15px;
+}
+.contact-title .h1 {
+  font-family: "Satisfy", cursive;
+  color: #5f5950;
+}
+.contact-title .h1 span {
+  color: #ffb03b;
+}
+
+.ratio {
+  width: 100vw;
+  height: 40vh;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 7vw;
+  margin-right: 7vw;
+  margin-top: 5vh;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2vw;
+  padding: 40vh;
+  flex-direction: column;
+  border: none;
+  padding: 4vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  box-shadow: 0px 0px 24px 0px grey;
+}
+
+.contact-p {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.input-text {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+}
+.input-text .text {
+  width: 424px;
+  height: 44px;
+  gap: 1vw;
+}
+.input-text .text .input-subject .subject {
+  width: 877px;
+  height: 44px;
+}
+.input-text .textarea {
+  width: 878px;
+  height: 127px;
+}
+
+.button-contact {
+  border-radius: 50px;
+  margin: 0px 0px 0px 20px;
+  padding: 10px 25px;
+  display: flex;
+  align-items: center;
+  width: 160px;
+  height: 50px;
+  background-color: #ffb03b;
+  color: white;
+  border: none;
+}
+
+.nav-link {
+  border: unset;
+  color: black;
+  gap: 20px;
+}
+.nav-link:hover {
+  color: orange;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.comment {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.carousel-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 70px;
+}
 
 /*# sourceMappingURL=app.css.map */

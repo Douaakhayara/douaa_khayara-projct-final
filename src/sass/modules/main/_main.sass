@@ -98,7 +98,14 @@
     padding-top: 50px
 .part4
     display: flex
+.parent1
+    display: flex
+    gap: 20px
+    width: 48%
 
+    img
+        border-radius: 50%
+        padding: 10px
 .menu
     gap: 20px
 .containre
@@ -110,25 +117,18 @@
     gap: 40px
 
     .parent1
-        display: flex
-        gap: 20px
-        width: 48%
-        
         img
             border: 6px solid #999a9661
             border-radius: 50%
         div
-            h6
-                color: #000
-
-                span
-                &::before
-                    content: "....................................................................................."
-                    color: grey
-                    
-            p
-                color: grey !important
-        
+        p
+            color: grey !important
+        h6
+            color: #000
+        span
+            &::before
+                content: "....................................................................................."
+                color: grey
         
 
 
@@ -186,7 +186,7 @@
     background-size: cover
     background-attachment: fixed
     position: relative
-    height: 100vh
+    height: 102vh
     padding-top: 80px
     width: 100%
     h1
@@ -255,28 +255,36 @@
      box-shadow: 0px 0px 24px 0px grey
      background-color: #dadad8
      width: 90vw
+     height: 90vh
      button
+        display: flex
+        align-items: center
+        justify-content: center
         background-color: orange
         border: none
         padding: 10px
         padding-bottom: 10px
+        position: absolute
+        left: 250px
+        
      
     
-     .contact-et
-         display: flex 
-         flex-direction: column
-         gap: 1vw
-         position: relative
+.contact-et
+    display: flex 
+    flex-direction: column
+    gap: 1vw
+    position: relative
+    width: 40%
          
-         .input-texts
-            display: flex
-            flex-direction: row
-            gap: 1vw
-            .text
-                 width: 15vw
-                 height: 44px
+    .input-texts
+        display: flex
+        flex-direction: row
+        gap: 1vw
+        .text
+             width: 20vw
+             height: 44px
 .textarea
-    width: 48vw
+    width: 62vw
     height: 50vh
 .form
     padding-top: 40px
@@ -284,7 +292,8 @@
     padding-bottom: 30px
 .img-lbel
     position: absolute
-    right: 48vw
+    right: 36vw
+    
 .gallery-title
     display: flex
     align-items: center
@@ -339,7 +348,7 @@
     flex-direction: column
     padding: 50px
     margin-top: 15px
-     h1
+    .h1
         font-family: "Satisfy", cursive
         color: #5f5950
         span
@@ -347,7 +356,6 @@
 .ratio
     width:100vw
     height: 40vh
-
 .info
     display: flex
     align-items: center
@@ -385,11 +393,11 @@
 .input-text
     display: flex
     flex-direction: row
-            gap: 2vw
-            .text 
-                 width: 424px
-                 height: 44px
-                 gap: 1vw
+    gap: 2vw
+    .text 
+        width: 424px
+        height: 44px
+        gap: 1vw
                  
         .input-subject
             
@@ -410,3 +418,27 @@
         background-color: #ffb03b
         color: white
         border: none
+.nav-link
+    border: unset
+    color: black 
+    gap: 20px 
+    &:hover
+        color: orange
+body
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    gap: 20px
+.comment
+    display: flex
+    text-align: center
+    justify-content: center
+    width: 100vw
+.carousel-caption
+    display: flex
+    align-items: center
+    justify-content: center
+    padding-top: 70px
+
+    
